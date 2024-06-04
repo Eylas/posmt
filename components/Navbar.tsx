@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 import { CalendarCheck, Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import Container from "./ui/container";
-import mainLogo from "../assets/Main logo.svg";
+import mainLogo from "../assets/Main logo.jpg";
 import Image from "next/image";
 
 const routes = [
@@ -23,7 +23,7 @@ const routes = [
 
 const Navbar = () => {
   return (
-    <header className="sm:flex sm:justify-evenly py-3 px-4 border-b bg-neutral-800 text-white">
+    <header className="sm:flex sm:justify-evenly py-3 px-4 border-b bg-black text-white">
       <Container>
         <div className="relative px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between mx-auto w-full">
           <div className="flex items-center">
@@ -36,14 +36,14 @@ const Navbar = () => {
               </SheetTrigger>
               <SheetContent
                 side={"top"}
-                className="flex flex-col gap-4 bg-neutral-800 text-white"
+                className="flex flex-col gap-4 bg-black text-white"
               >
                 <Link href={"/"} className="m-3 mx-auto">
                   <Image
                     src={mainLogo}
-                    alt="Nodehex logo"
-                    height={120}
-                    width={120}
+                    alt="logo"
+                    height={90}
+                    width={90}
                   ></Image>
                 </Link>
                 {routes.map((route, i) => (

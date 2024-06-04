@@ -20,8 +20,7 @@ export const Hero = () => {
               </p>
 
               <div className="space-y-4 md:space-y-0 md:space-x-4">
-                <Button className="w-full md:w-1/3 text-black">Book a call</Button>
-                <Button variant={"secondary"} className="w-full md:w-1/3 text-black">Book a demo</Button>
+                <Button className="w-full md:w-1/3 text-white">Book a session</Button>
               </div>
             </div>
 

@@ -1,11 +1,11 @@
 import Image from "next/image";
-import mainLogo from "../assets/Main logo.svg"
+import mainLogo from "../assets/Main logo.jpg"
 
 export const Footer = () => {
   return (
     <footer id="footer">
       <hr className="w-11/12 mx-auto" />
-      <section className="w-full bg-neutral-800 text-white">
+      <section className="w-full bg-black text-white">
         <section className="container py-20 grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
           <div className="col-span-full xl:col-span-2">
             <Image src={mainLogo} alt="words" height={100} width={200}></Image>
